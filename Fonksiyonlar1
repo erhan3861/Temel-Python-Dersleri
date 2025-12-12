@@ -1,0 +1,36 @@
+# def merhabasoyle():
+#     print("merhaba")
+
+# for i in range(10):
+#     merhabasoyle()
+
+import random
+
+def renksecici():
+    renkler = ["kırmızı","yeşil","mavi","sarı"]
+    renk = random.choice(renkler)
+    if renk == "kırmızı":
+        print("arkaplan kırmızı oldu")
+    elif renk == "yeşil":
+        print("arkaplan yeşil oldu")
+    elif renk == "mavi":
+        print("arkaplan mavi oldu")
+    else:
+        print("arkaplan sarı oldu")
+
+# renksecici()
+
+def rastgele():
+    num=random.randint(1,100)
+    print(num)
+    if num < 10:
+        print("sayı tek basamaklı")
+        renksecici()
+    elif num < 100:
+        renksecici()
+        print("sayı 2 basamaklı")
+    else:
+        print("sayı 3 basamaklı")
+    
+# rastgele()
+
